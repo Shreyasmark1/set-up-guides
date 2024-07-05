@@ -1,17 +1,15 @@
 # Deploying Next.js Project to GitHub Pages
 
-=====================================
-
 This guide will walk you through the process of deploying a Next.js project with static export to GitHub Pages when you push your changes to a specific branch.
 
-### Prerequisites
+# Prerequisites
 
 Before you get started, make sure you have:
 
 - A Next.js project with static content (projects with server actions will not work)
 - A GitHub account
 
-### Steps
+# Steps
 
 ### 1. Link Your Working Directory to GitHub
 Ensure your current working directory is linked to your GitHub account.
