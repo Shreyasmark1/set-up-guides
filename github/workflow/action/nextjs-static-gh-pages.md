@@ -24,7 +24,7 @@ Go to Settings -> Pages in the GitHub web interface and configure the following:
 ### 3. Create a GitHub Actions File
 Create a file named gh-deployment.yml inside the __`./github/workflows`__ folder.
 
-4. Configure the GitHub Actions File
+### 4. Configure the GitHub Actions File
 
 
 ```bash
@@ -134,6 +134,11 @@ jobs:
 
 This configuration will deploy your Next.js project with static export to GitHub Pages when you push changes to the beta branch.
 
-4. If your .gitignore file includes __`.github`__ directory then you will have to add __`gh-deployment.yml`__ file using the Github Web Interface.
+### 5. Commit
+Commit and push your changes to remote and wait for it to publish.
 
-5. Commit and push your changes to remote and wait for it to publish
+If your .gitignore file includes __`.github`__ directory then you will have to add __`gh-deployment.yml`__ file using the Github Web Interface.
+
+### 6. Publishing
+If your already on the __`beta`__ branch then adding this workflow file will trigger the action or else you will have to push new update to beta branch
+
