@@ -22,7 +22,7 @@ Go to Settings -> Pages in the GitHub web interface and configure the following:
 - __Root__ of your project: Set to the root of your project
 
 ### 3. Create a GitHub Actions File
-Create a file named gh-deployment.yml inside the __`./github/workflows`__ folder.
+Create a file named gh-deployment.yml inside the __`./.github/workflows`__ folder.
 
 ### 4. Configure the GitHub Actions File
 
