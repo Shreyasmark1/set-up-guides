@@ -164,6 +164,8 @@ GRANT ALL PRIVILEGES ON DATABASE myapp_db TO myapp_user;
 
 Now, you can use `psql -U myapp_user -d myapp_db -h <your_vps_ip>` from your application server to connect.
 
+Or you can use `postgresql://your_user:your_password@your_vps_ip_address:5432/your_database` connection url.
+
 **b. Configure a Firewall Rule for PostgreSQL**
 Now that PostgreSQL is listening remotely, you must open the port in your firewall. The default port is `5432`.
 
