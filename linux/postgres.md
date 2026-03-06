@@ -89,6 +89,13 @@ Enter a strong password. Then, exit `psql` and the `postgres` shell.
 
 The default configuration is not optimized for a production server. The main configuration files are `/etc/postgresql/<version>/main/postgresql.conf` and `/etc/postgresql/<version>/main/pg_hba.conf`.
 
+**Tip**: Use the following command to plug the version directory dynamically into the path. 
+
+```
+sudo nano /etc/postgresql/$(ls /etc/postgresql/)/main/postgresql.conf
+```
+
+
 **a. Configure Network Listening (pg\_hba.conf)**
 By default, PostgreSQL only listens on `localhost`. To allow remote connections, you need to configure `postgresql.conf`.
 
@@ -179,7 +186,7 @@ sudo ufw allow 5432/tcp
 sudo ufw allow from <your_app_server_ip> to any port 5432
 ```
 
-### 5\. Performance and Maintenance (Advanced Best Practices)
+### 5\. Performance and Maintenance (Advanced Best Practices) (Optional)
 
 **a. Fine-Tune `postgresql.conf`**
 The default values are very conservative. Adjust these based on your server's resources (RAM, CPU).
