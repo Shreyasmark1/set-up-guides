@@ -14,7 +14,7 @@ Before running the replication command, ensure the following connectivity requir
 
 * **Postgres Configuration (Prod):**
 * *Edit postgresql.conf:*  `/etc/postgresql/$(ls /etc/postgresql/)/main/postgresql.conf` and set: `listen_addresses = '[STAGING_IP]'` or  `listen_addresses = '*'`
-* *Edit pg_hba.conf:* `/etc/postgresql/$(ls /etc/postgresql/)/main/pg_hba.conf` and add this in the last line `host all all [STAGING_IP]/32 md5` or `host all all 0.0.0.0/32 scram-sha-256`
+* *Edit pg_hba.conf:* `/etc/postgresql/$(ls /etc/postgresql/)/main/pg_hba.conf` and add this in the last line `host all all [STAGING_IP]/32 md5` or `host all all 0.0.0.0/0 scram-sha-256`
 * *Apply changes:* `sudo systemctl restart postgresql`
 * *Firewall allow connection:* `sudo ufw allow from [STAGING_IP] to any port 5432 proto tcp`
 
