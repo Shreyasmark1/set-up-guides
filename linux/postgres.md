@@ -138,6 +138,7 @@ This file (`pg_hba.conf`) controls which hosts can connect, and how they authent
     ```conf
     # TYPE  DATABASE  USER  ADDRESS  METHOD
     host    all       all   <your_app_server_ip>/32   md5
+    host    all       all   0.0.0.0/0 md5
     ```
       - `host`: Allows TCP/IP connections.
       - `all`: Applies to all databases.
