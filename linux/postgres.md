@@ -163,6 +163,11 @@ Don't use the `postgres` superuser for your application. This is a significant s
 ```bash
 sudo -i -u postgres
 ```
+then 
+
+```bash
+psql
+```
 
 ```sql
 CREATE DATABASE myapp_db;
