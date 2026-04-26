@@ -36,6 +36,10 @@ Log out and back in with your new user.
     ```bash
     PermitRootLogin no
     ```
+    Tip: disable password authetication if setting up SSK Key auth
+    ```bash
+    PasswordAuthentication no
+    ```
   - **Use SSH key authentication:** This is more secure than passwords.
       - On your local machine, generate a key pair if you don't have one:
         ```bash
